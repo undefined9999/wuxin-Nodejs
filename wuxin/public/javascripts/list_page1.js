@@ -1,7 +1,7 @@
 $(function(){
 /***********************************************************/
 	var addpage = parseInt($("#pageCurrent").html())
-/******请求*******************************************************/
+/******请求商品列表*******************************************************/
 	chaajax();
 /*******************上一页*********************************************/
 	changePageUp = function(){	
@@ -85,25 +85,26 @@ mychange = function(obj){
 	var goods_number = $(obj).parents().children("#goods_number").text();
 	//console.log(goods_number);
 	//后台发送当前商品编号
-	  $.ajax({
+	  $.ajax({         
 			url: "/api/goods_change",
 			type: "post",
 			data:{
 				goods_number : goods_number
 			},
-			success: function(res) {
+			success: function(res) {     //
 				//console.log(res);
 				var data = res.data;
+				      //请求编辑页面 
 						$.ajax({
 						url: "/list_page3",
 						type: "get",			
 						success: function(res) {
 					       //console.log(data);
 					       $.each(data, function(index,value) {
-					       	$(".list_r").html(res);
-							//console.log(value.goods_name);
-							$("#goods_name").val(value.goods_name);
-							$("#goods_number").val(value.goods_number);				       							$("#price").val(value.price);
+						       	$(".list_r").html(res);
+								//console.log(value.goods_name);
+								$("#goods_name").val(value.goods_name);
+								$("#goods_number").val(value.goods_number);				       								$("#price").val(value.price);
 					       });						 
 						}
 					})

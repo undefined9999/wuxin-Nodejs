@@ -54,7 +54,7 @@
 									<tr class="tr_2">
 										<td class="td_onel"><img src="/images/notice.gif"/>商品编号：</td>
 										<td class="td_oner">
-											<input type="text" name="" id="goods_number" value="" />
+											<input type="text" name="" id="goods_number" value="" disabled="disabled"/>
 											<i>*</i>
 											<p id="">如果您不输入商品货号，系统将自动生成一个唯一的货号。</p>		
 											
@@ -255,40 +255,7 @@
 					</div>
 				</div>
 				<!---->
-				<script>
-	function upload() {
-		var form = new FormData(); // FormData是H5新特性
-		form.append("goods_name", document.getElementById("goods_name").value);
-		form.append("price", document.getElementById("price").value);
-		form.append("goods_number",
-document.getElementById("goods_number").value);
-		form.append("flag",'ad');
-		form.append("img", document.getElementById("img").files[0]);
-		form.append("shopclass",$("#shopclass option :selected").text())
-		
-		 
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "/api/goods");//后端接口
-		xhr.onreadystatechange = function(res){
-			if (xhr.readyState==4 && xhr.status==200) {
-				//console.log(xhr.responseText);
-				var res = JSON.parse(xhr.responseText);
-				alert(res.message);
-			}
-		}
-		xhr.send(form);
-		/********************************************/
-			$(".list_r").children().remove();
-			$.ajax({
-				url: "/list_page1",
-				type: "get",			
-				success: function(res) {
-					//console.log(res);
-				$(".list_r").html(res);				
-				}
-			})
-		}		
-		</script>
+				
 				<!---->
 				<!-------详细描述---------->
 				<div class="xiang">
