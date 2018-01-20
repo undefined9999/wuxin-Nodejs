@@ -39,7 +39,7 @@ $(function(){
 				var goods_number = value.goods_number;
 				var index = index + 1;
 				//console.log(res[i]);
-var str = '<tr class="shops"><td><input name="checkboxes" value="" type="checkbox">'+index +'</td><td class="first-cell"><span onclick="change(this)">'+goods_name+'</span></td><td align="center" id="goods_number"><span onclick="change(this)">'+goods_number+'</span></td><td  align="center" class="price"><span onclick="change(this)" title="点击修改内容" style="">'+price+'</span></td><td align="center"><img src="../images/no.gif"onclick=""></td><td align="center"><img src="../images/yes.gif" onclick=""></td><td align="center"><img src="../images/no.gif" onclick=""></td><td align="center"><img src="../images/yes.gif" onclick=""></td><td align="center"><span onclick=" ">100</span></td><td align="center"><span onclick="">1</span></td><td align="center"><span onclick="#">0</span></td><td align="center"><a href="#"  title="查看"><img src="../images/icon_view.gif" width="21" height="21" border="0"></a><a href="#" title="编辑" onclick="mychange(this)"><img src="../images/icon_edit.gif" width="21" height="21" border="0"></a><a href="javascript:;" title="复制" onclick="clone(this),changNum()"><img src="../images/icon_copy.gif" width="21" height="21" border="0"></a><a href="javascript:;" onclick="remove(this),changNum()" title="回收站"><img src="../images/icon_trash.gif" width="21" height="21" border="0"></a><img src="../images/empty.gif" width="21" height="21" border="0"></td></tr>'
+var str = '<tr class="shops"><td><input name="checkboxes" value="" type="checkbox">'+index +'</td><td class="first-cell"><span onclick="change(this)">'+goods_name+'</span></td><td align="center" id="goods_number"><span onclick="change()">'+goods_number+'</span></td><td  align="center" class="price"><span onclick="change(this)" title="点击修改内容" style="">'+price+'</span></td><td align="center"><img src="../images/no.gif"onclick=""></td><td align="center"><img src="../images/yes.gif" onclick=""></td><td align="center"><img src="../images/no.gif" onclick=""></td><td align="center"><img src="../images/yes.gif" onclick=""></td><td align="center"><span onclick=" ">100</span></td><td align="center"><span onclick="">1</span></td><td align="center"><span onclick="#">0</span></td><td align="center"><a href="#"  title="查看"><img src="../images/icon_view.gif" width="21" height="21" border="0"></a><a href="#" title="编辑" onclick="mychange(this)"><img src="../images/icon_edit.gif" width="21" height="21" border="0"></a><a href="javascript:;" title="复制" onclick="clone(this),changNum()"><img src="../images/icon_copy.gif" width="21" height="21" border="0"></a><a href="javascript:;" onclick="remove(this),changNum()" title="回收站"><img src="../images/icon_trash.gif" width="21" height="21" border="0"></a><img src="../images/empty.gif" width="21" height="21" border="0"></td></tr>'
 					//console.log(str)							
 			  $("#goods_").append(str);			  
 			   $("#totalRecords").html(total);
@@ -119,9 +119,29 @@ change = function(obj){
 		        $(obj).parent().append('<input id="act" type="text" value="'+str+'"/>');
 			$("#act").blur(function(){
 				var str1 = $(this).val();				
-		       $(obj).html(str1);
-		        $(this).remove();
-			})
+		       $(obj).html(str1);		       
+		       
+		        setTimeout(function(){
+		      			var goods_name = $(this).parents().children(".first-cell").text();
+				       var price = $(this).parents().children(".price").text();
+				       var goods_number = $(this).parents().children("#goods_number").text();
+				        $(this).remove();
+		        	console.log(goods_name,price,'shi'+goods_number,)
+		        	  	$.ajax({
+						url : "/api/goods_chang",
+						type : "post",
+						data :{
+							goods_name : goods_name ,
+							price : price,
+							goods_number : goods_number
+						},
+						success : function(res){
+							console.log(res.message);				
+						}
+					})
+		        }.bind(this),100)
+		      		       		        	        
+			})			
 		}
 //console.log(change)
 /***********************************************************/

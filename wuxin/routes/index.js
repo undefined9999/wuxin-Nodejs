@@ -189,11 +189,13 @@ router.post('/api/goods_chang', function(req, res, next) {
 		var goods_name = req.body.goods_name;
 		var price = req.body.price;
 		var goods_number = req.body.goods_number;
+		
+		console.log(goods_name,price,goods_number,)
 		  var result = {
 		  	code : 1,
 		  	message : "修改成功"
 		  };
-	GoodsModel.update({goods_number : goods_number},{$set:{goods_number : goods_number,price:price,goods_name:goods_name}},function(err){
+	GoodsModel.update({goods_number : goods_number,price : price,goods_number : goods_number},{$set:{goods_number : goods_number,price:price,goods_name:goods_name}},function(err){
 		if(err){
 					result.code = -110;
 					result.message = "修改失败";

@@ -36,9 +36,6 @@ nav ul{
 nav ul li{
 	float: left; padding: 0 12px; line-height: 42px; font-size: 12px;
 }
-nav ul .li_s{
-	background: url(../images/imgs-1.gif) no-repeat right center;
-}
 nav ul li:hover{
 	background: #303030;
 }
@@ -53,7 +50,7 @@ nav ul li span{
 }
 /**********************************************************/
 #list{
-	width: 180px; height:632px;  float: left; overflow-y:auto;
+	width: 180px; height:675px;  float: left; overflow-y:auto;
 }
 #list .top{
 	width: 135px; height: 34px; padding-left: 28px ; background: #303030;  font-weight: bolder; font-size: 15px; line-height: 34px;
@@ -101,12 +98,10 @@ nav ul li span{
 }
 /******************************************************/
 .list_right{
-	background:#eee;float:left;height:632px;width:1243px;
+	background:#eee;float:left;height:675px;width:1243px;
 	overflow-y: auto;
 }
 .list_r{
-	/*height:1000px;*/
-    background: url(../images/body_bj.jpg);
     padding: 10px;
     width: 1200px;
     font-family: Microsoft Yahei;
@@ -123,7 +118,7 @@ nav ul li span{
     height: 26px;
     line-height: 26px;
     padding: 0 10px 0 23px;
-    background: #c43926 url(../images/icon_add02.gif) no-repeat 6px center;
+    background: #c43926;
     border-radius: 3px;
     color: #fff;
     font-size: 13px;
@@ -141,7 +136,7 @@ nav ul li span{
 }
 /*******************************************************/
 .form-div {
-    background: #f3f3f3 url("../images/th_bg.gif") repeat-x;
+    background: #f3f3f3 ;
     border: 1px solid #ddd;
     padding: 5px;
     color: #808080;
@@ -173,7 +168,7 @@ nav ul li span{
 
 .list-div th {
   line-height: 39px;
-  background: #f3f3f3 url("../images/th_bg.gif") repeat-x;
+  background: #f3f3f3 ;
   white-space: nowrap;
 }
 
@@ -241,7 +236,7 @@ nav ul li span{
 }
 /******************************************************/
 #footer {
-  background: #f3f3f3 url("../images/th_bg.gif") repeat-x;
+  background: #f3f3f3 ;
   border: 1px solid #ddd;
   padding: 15px;
   color: #9CACAF;
