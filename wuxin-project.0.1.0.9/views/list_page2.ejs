@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		    <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+			<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+			<META HTTP-EQUIV="expires" CONTENT="0">
+			<title></title>
+			<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"/>		
+	</head>
+	<body>
+			<div class="sec_rig">
+				<h1>
+					<span>CSHOP 管理中心-添加新商品</span>
+					<span><img src="/images/jnsy.png"/></span>
+					<span>
+						<a href="javascript:;">+商品列表</a>
+					</span>
+				</h1>
+				<!----------------------->
+				<div class="rig_main">
+					<div class="rig_nav">
+						<ul>
+							<li class="dian_1">通用信息</li>
+							<li class="dian_2">详细描述</li>
+							<li class="dian_3">其他信息</li>
+							<li class="dian_4">商品属性</li>
+							<li class="dian_5">商品相册</li>
+							<li>关联商品</li>
+							<li>配件</li>
+							<li>关联文章</li>
+						</ul>
+					</div>
+					<div class="rig_form">
+						<form action="">
+							<table>
+								<tbody>
+									<tr>
+										<td class="td_onel" id="">商品名称：</td>
+										<td class="td_oner">
+											<input type="text" name="" id="goods_name" value="" />
+											<span></span>
+											<select name="">
+												<option value="">字体样式</option>
+												<option value="strong">加粗</option>
+												<option value="em">斜体</option>
+												<option value="u">下划线</option>
+												<option value="strike">删除线</option>
+											</select>
+											<i>*</i>
+										</td>
+									</tr>
+									<tr class="tr_2">
+										<td class="td_onel"><img src="/images/notice.gif"/>商品编号：</td>
+										<td class="td_oner">
+											<input type="text" name="" id="goods_number" value="" />
+											<i>*</i>
+											<p id="">如果您不输入商品货号，系统将自动生成一个唯一的货号。</p>													
+										</td>
+									</tr>
+									<tr class="tr_3">
+										<td class="td_onel">商品分类：</td>
+										<td class="td_threer">
+											<select name="" id="shopclass">
+												<option value="">请选则...</option>
+												<option value="">钻石</option>
+												<option value="">&nbsp;&nbsp;内衣</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;家居服</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内裤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内衣、套装</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内裤</option>
+												<option value="">&nbsp;&nbsp;POLO衫</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;短袖POLO衫</option>	
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;长袖POLO衫</option>
+												<option value="">&nbsp;&nbsp;T恤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;长袖T恤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;短袖T恤</option>
+											</select>	
+											<a href="javascript:;">添加分类</a>
+											<div>
+												<input type="text" name="" id="" value="" />
+												<a href="javascript:;">确定</a>
+												<a href="javascript:;">分类管理</a>
+												<a href="javascript:;" class="a_dian1">&lt;&lt;</a>
+												<i style="color: #FF3F3F;">*</i>
+											</div>
+										</td>
+									</tr>
+									<tr class="tr_4">
+										<td class="td_onel">扩展分类：</td>
+										<td class="td_fourr">
+											<input type="button" name="" id="" value="添加" />	
+											<select name="">
+												<option value="">请选则...</option>
+												<option value="">钻石</option>
+												<option value="">&nbsp;&nbsp;内衣</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;家居服</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内裤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内衣、套装</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;内裤</option>
+												<option value="">&nbsp;&nbsp;POLO衫</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;短袖POLO衫</option>	
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;长袖POLO衫</option>
+												<option value="">&nbsp;&nbsp;T恤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;长袖T恤</option>
+												<option value="">&nbsp;&nbsp;&nbsp;&nbsp;短袖T恤</option>
+											</select>
+										</td>
+									</tr>
+									<tr class="tr_5">
+										<td class="td_onel">商品品牌：</td>
+										<td class="td_threer">
+											<select name="">
+												<option>请选择...</option>
+												<option>KK</option>
+												<option>美丽年华</option>
+												<option>圣迪奥</option>
+												<option>addas</option>
+												<option>模具额</option>
+												<option>高档酒可</option>
+												<option>双模卡基</option>
+												<option>街道司m</option>
+											</select>	
+											<a href="javascript:;">添加品牌</a>
+											<div>
+												<input type="text" name="" id="" value="" />
+												<a href="javascript:;">确定</a>
+												<a href="javascript:;">品牌管理</a>
+												<a href="javascript:;" class="dian_a2">&lt;&lt;</a>
+											</div>
+										</td>
+									</tr>
+									<tr class="tr_6">
+										<td class="td_onel" id="">本店售价：</td>
+										<td class="td_sixr">
+											<input type="text" name="" id="price" value="0" />
+											<input type="button" name="" id="" value="按市场价计算" />	
+											<i style="color: #FF3F3F;">*</i>
+										</td>	
+									</tr>
+									<tr class="tr_7">
+										<td class="td_onel"><img src="/images/notice.gif"/>会员价格：</td>
+										<td class="td_sevenr">
+											注册用户
+											<input type="text" name="" id="" value="-1" />
+											代销用户
+											<input type="text" name="" id="" value="-1" />
+											vip
+											<input type="text" name="" id="" value="-1" />
+											<p>会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</p>											
+										</td>
+									</tr>
+									<tr class="tr_8">
+										<td class="td_rightl"><img src="/images/notice.gif"/>商品优惠价格：</td>
+										<td class="td_rightr">
+											<p for="">
+												<a href="javascript:;">[ + ]</a>
+												优惠数量
+												<input type="text" name="" id="" value=" " />
+												优惠价格
+												<input type="text" name="" id="" value="-1" />
+											</p>	
+											<p for="">
+												<a href="javascript:;">[&nbsp;-&nbsp;]</a>
+												优惠数量
+												<input type="text" name="" id="" value=" " />
+												优惠价格
+												<input type="text" name="" id="" value="-1" />
+											</p>
+											<p>购买数量达到优惠数量时享受的优惠价格</p>											
+										</td>
+									</tr>
+									<tr class="tr_6 tr_9">
+										<td class="td_onel">市场售价：</td>
+										<td class="td_sixr">
+											<input type="text" name="" id="" value="0" />
+											<input type="button" name="" id="" value="取整数" />	
+										</td>	
+									</tr>
+									<tr class="tr_6 tr_10">
+										<td class="td_onel">虚拟销量：</td>
+										<td class="td_sixr td_tenr">
+											<input type="text" name="" id="" value="0" />	
+										</td>	
+									</tr>
+									<tr class="tr_6 tr_11">
+										<td class="td_onel"><img src="/images/notice.gif"/>赠送消费积分：</td>
+										<td class="td_sixr td_eler">
+											<input type="text" name="" id="" value="-1" />	
+											<p>
+												购买该商品时赠送消费积分数,-1表示按商品价格赠送
+											</p>
+										</td>	
+									</tr>
+									<tr class="tr_6 tr_11 tr_12">
+										<td class="td_onel"><img src="/images/notice.gif"/>赠送等级积分：</td>
+										<td class="td_sixr td_eler td_twl">
+											<input type="text" name="" id="" value="-1" />	
+											<p>
+												购买该商品时赠送消费积分数,-1表示按商品价格赠送
+											</p>
+										</td>	
+									</tr>
+									<tr class="tr_13">
+										<td class="td_onel">
+											<input type="checkbox" name="" id="" value="" />促销价：</td>
+										<td class="td_telr">
+											<input type="text" name="" id="" value="0" disabled="disabled"/>	
+										</td>	
+									</tr>
+									<tr class="tr_14">
+										<td class="td_onel">
+											促销日期：</td>
+										<td class="td_foter">
+											<input type="text" name="" id="" value="2018-01-16"/>	
+											<input type="button" name="" id="" value="选择" />
+											-
+											<input type="text" name="" id="" value="2018-02-15"/>	
+											<input type="button" name="" id="" value="选择" />
+										</td>	
+									</tr>
+									<tr class="tr_15">
+										<td class="td_onel">
+											上传商品照片：</td>
+										<td class="td_sixtr" >
+											<p><input type="file" name="" id="img" value="选择文件"/>
+											<img src="/images/no.gif"/></p>
+										</td>	
+									</tr>
+									
+									<tr class="tr_16">
+										<td class="td_onel">
+											上传商品缩略图：</td>
+										<td class="td_sevtr">
+											<p><input type="file" name="" id="" value="选择文件" disabled="diabled"/>
+											<img src="/images/no.gif"/></p>
+											<p>
+												<input type="file" name="" id="" value="商品缩略图外部URL" onfocus="if (this.value == '商品缩略图外部URL'){this.value='http://';this.style.color='#000';}" disabled="diabled"/>
+												
+											</p>
+											<p>
+												<input type="checkbox" name="" id="" value=""  />自动生成商品缩略图
+											</p>
+										</td>	
+									</tr>		
+								</tbody>
+							</table>
+							<div class="form_bottom">
+								<input type="button" name="" id="" value="确定" onclick="upload()"/>
+								<input type="button" name="" id="" value="重置" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<!---->
+				<script>
+	function upload() {
+		var form = new FormData(); // FormData是H5新特性
+		form.append("goods_name", document.getElementById("goods_name").value);
+		form.append("price", document.getElementById("price").value);
+		form.append("goods_number",
+document.getElementById("goods_number").value);
+		form.append("flag",'ad');
+		form.append("img", document.getElementById("img").files[0]);
+		form.append("shopclass",$("#shopclass option :selected").text())
+		
+		 
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", "/api/goods");//后端接口
+		xhr.onreadystatechange = function(res){
+			if (xhr.readyState==4 && xhr.status==200) {
+				//console.log(xhr.responseText);
+				var res = JSON.parse(xhr.responseText);
+				alert(res.message);
+					$(".list_r").children().remove();
+					$.ajax({
+						url: "/list_page1",
+						type: "get",			
+						success: function(res) {
+							//console.log(res);
+						$(".list_r").html(res);				
+						}
+					})
+			}
+		}
+		xhr.send(form);
+		/********************************************/
+		
+		}		
+		</script>
+				<!---->
+				<!-------详细描述---------->
+				<div class="xiang">
+					<textarea name="" rows="" cols=""></textarea>
+					<div class="form_bottom">
+						<input type="button" name="" id="" value="登录" />
+						<input type="button" name="" id="" value="重置" />
+					</div>
+				</div>
+				
+				<!-----------其他信息--------->	
+				<div class="qita">
+					<table border="" cellspacing="" cellpadding="">
+						<tr class="qi_tr1">
+							<td class="qi_onel">
+								商品重量：
+							</td>
+							<td class="qi_oner">
+								<input type="text" name="" id="" value="" />
+								<select name="">
+									<option value="">千克</option>
+									<option value="">克</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="qi_tr2">
+							<td class="qi_onel">
+								<img src="/images/notice.gif"/>
+								商品库存数量：
+							</td>
+							<td class="qi_oner">
+								<p><input type="text" name="" id="" value="1" /></p>
+								<p>库存在商品为虚货或商品存在货品时为不可编辑状态，库存数值取决于其虚货数量或货品数量</p>
+							</td>
+						</tr>
+						<tr class="qi_tr1 qi_tr3">
+							<td class="qi_onel">
+								库存警告数量：
+							</td>
+							<td class="qi_oner">
+								<input type="text" name="" id="" value="1" />
+							</td>
+						</tr>
+						<tr class="qi_tr4">
+							<td class="qi_onel">
+								加入推荐：
+							</td>
+							<td class="qi_oner">
+								<p>
+									<input type="checkbox" name="" id="" value="1" />
+									精品
+									<input type="checkbox" name="" id="" value="1" />
+									新品
+									<input type="checkbox" name="" id="" value="1" />
+									热销
+								</p>
+							</td>
+						</tr>
+						<tr class="qi_tr4 qi_tr6">
+							<td class="qi_onel">
+								上架：
+							</td>
+							<td class="qi_oner">
+								<p>
+									<input type="checkbox" name="" id="" value="1" />
+									 打勾表示允许销售，否则不允许销售。
+								</p>
+							</td>
+						</tr>
+						<tr class="qi_tr4 qi_tr7">
+							<td class="qi_onel">
+								能作为普通商品销售：
+							</td>
+							<td class="qi_oner">
+								<p>
+									<input type="checkbox" name="" id="" value="1" />
+									 打勾表示能作为普通商品销售，否则只能作为配件或赠品销售。
+								</p>
+							</td>
+						</tr>
+						<tr class="qi_tr4 qi_tr8">
+							<td class="qi_onel">
+								能否为免运费商品：
+							</td>
+							<td class="qi_oner">
+								<p>
+									<input type="checkbox" name="" id="" value="1" />
+									  打勾表示此商品不会产生运费花销，否则按照正常运费计算。
+								</p>
+							</td>
+						</tr>
+						<tr class="qi_tr4 qi_tr9">
+							<td class="qi_onel">
+								商品关键字：
+							</td>
+							<td class="qi_oner">
+								<input type="text" name="" id="" value="" />用空格分隔
+							</td>
+						</tr>
+						<tr class="qi_tr10">
+							<td class="qi_onel">
+								商品简单描述：
+							</td>
+							<td class="qi_oner">
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+							</td>
+						</tr>
+						<tr class="qi_tr11">
+							<td class="qi_onel">
+								<img src="/images/notice.gif"/>
+								商家备注：
+							</td>
+							<td class="qi_oner">
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+								<p>仅供商家自己看的信息</p>
+							</td>
+						</tr>
+					</table>
+					<div class="form_bottom">
+						<input type="button" name="" id="" value="登录" />
+						<input type="button" name="" id="" value="重置" />
+					</div>
+				</div>
+				<!---------商品属性---------------->
+				<div class="shuxing">
+					<table border="" cellspacing="" cellpadding="">
+						<tr class="shu_tr1">
+							<td>
+								<img src="/images/notice.gif"/>
+								商品类型
+							</td>
+							<td>
+								<p>
+									<select name="">
+										<option value="">请选择商品类型</option>
+										<option value="">书</option>
+										<option value="">音乐</option>
+										<option value="">电影</option>
+										<option value="">娱乐</option>
+										<option value="">新闻</option>
+										<option value="">游乐园</option>
+										<option value="">踏上世界</option>
+										<option value="">斗舞</option>
+									</select>
+								</p>
+								<p>
+									请选择商品的所属类型，进而完善此商品的属性
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<!------------商品相册------------->
+				<div class="xiangce">
+					<form action="" method="post">
+						<p>
+							<a href="javascript:;">[+]</a>图片描述
+							<input type="text" name="" id="" value="" />
+							上传文件
+							<input type="file" name="" id="" value="选择文件" />
+							<input type="text" name="" id="" value="或者输入外部图片链接地址" onfocus="if (this.value == '或者输入外部图片链接地址'){this.value='http://';this.style.color='#000';}" style="font-size: 10px;" class="http_"/>
+						</p>
+						<div class="form_bottom">
+							<input type="button" name="" id="" value="登录" />
+							<input type="button" name="" id="" value="重置" />
+						</div>
+					</form>
+				</div>				
+				<div class="bot">	
+共执行 9 个查询，用时 0.025382 秒，Gzip 已禁用，内存占用 3.587 MB<br />
+版权所有 © 2005-2018 上海商派软件有限公司，并保留所有权利。
+				</div>
+			</div>
+	</body>
+	<script type="text/javascript" src="/javascripts/main.js" ></script>
+</html>

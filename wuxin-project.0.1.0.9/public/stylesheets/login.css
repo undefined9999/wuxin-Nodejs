@@ -1,0 +1,130 @@
+html,body{width:100%;height:100%;}
+ .login-body{width: 100%;
+    height: 100%;
+    background: #555 url(../images/ecshop-bg.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    }
+     .login-hd {
+    background: none;
+    height: 44px;
+    padding: 40px 0 40px 50px;
+}
+  .center-wrap {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 475px;
+    margin: auto auto;
+    transform: translateY(-50%);
+}
+ .login-center {
+    width: 380px;
+    margin: 0 auto;
+}
+.center-wrap .bd-logo img {
+    width: 248px;
+    height: 65px;
+    margin-left: 66px;
+}
+.z-bd {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 42px;
+    height: 350px;
+    margin-top: 50px;
+}
+ .login-panel {
+    position: absolute;
+    left: 16px;
+    z-index: 2;
+    width: 302px;
+    height: 321px;
+    background: rgba(255,255,255,.85);
+    border: none;
+    border-radius: 0;
+    color: #A1A1A1;
+    padding: 5px 70px 25px;
+    overflow: hidden;
+    box-shadow: 5px 2px 20px rgba(0,0,0,.3);
+    height: 322px;
+}
+.login-panel .controls {
+    position: relative;
+    height: 51px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.login-panel .first {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    margin-top:40px;
+}
+.controls .iconfont {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+}
+.controls input {
+    border: 0;
+    background-color: #fff;
+    color: #8a8a8a;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-indent: 50px;
+    box-shadow: inset 30px 30px 0 30px #fff;
+}
+.login-panel .first input {
+    margin: 0;
+    padding: 1px 0;
+}
+.last{
+	width:302px;
+	margin-top: 20px;
+}
+.last .btn-a {
+    cursor: pointer;
+    width:100%;
+    margin-top: 20px;
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+    background:#fc7878;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 4px;
+}
+.bside {
+    margin-top: 12px;
+    overflow: hidden;
+    height: auto;
+}
+.login-panel .bside input {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 2px 8px 0 0;
+}
+.login-panel .bside label {
+    color: #666;
+    float: left;
+}
+.login-panel .bside a {
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+.login-panel .bside .link-forget {
+    float: left;
+    margin-left: 25px;
+}

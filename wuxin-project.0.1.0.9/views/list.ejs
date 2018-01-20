@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= title %></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/list.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css"/>
+		<script type="text/javascript" src="/javascripts/jquery-1.11.3.JS" ></script>
+	<script type="text/javascript" src="/javascripts/list.js" ></script>
+<link rel="stylesheet" href="/stylesheets/list_page2.css" />
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<div class="logo_div">
+				<img src="/images/topLogo.png"/>
+			</div>
+			<div class="submenu_div">
+				<ul>
+					<li class="li_top1">
+						<a href="javascript:;">
+							<img src="/images/topmune_09.png"/>
+							<span>
+								更多模板堂产品
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_01.png"/>
+							<span>开店向导</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_02.png"/>
+							<span>
+								记事本
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_03.png"/>
+							<span>
+								刷新
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_04.png"/>
+							<span>
+								个人设置
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_05.png"/>
+							<span>
+								管理员留言
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_06.png"/>
+							<span>
+								查看网店
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_007.png"/>
+							<span>
+								帮助
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_07.png"/>
+							<span>
+								关于ECSHOP
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/qingchu.png"/>
+							<span>
+								清除缓存
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="/images/topmune_08.png"/>
+							<span>
+								退出
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--nav-->
+		<nav>
+			<ul>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/index-11_07.png"/></i>
+					<a href="javascript:;">起始页</a>
+				</li>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/index-11_41.png"/></i>
+					<a href="javascript:;">设置导航栏</a>
+				</li>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/index-11_09.png"/></i>
+					<a href="javascript:;">商品管理</a>
+					<span id="num2">0</span>
+				</li>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/dd.png"/></i>
+					<a href="javascript:;">订单管理</a>
+					<span>0</span>
+				</li>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/index-11_13.png"/></i>
+					<a href="javascript:;">广告管理</a>
+					<span>0</span>
+				</li>
+				<li class="li_s">
+					<i class="iconfont "><img src="/images/index-11_19.png"/></i>
+					<a href="javascript:;">用户评价</a>
+					<span>0</span>
+				</li>
+				<li>
+					<a href="javascript:;">商品列表</a>
+				</li>
+				<li>
+					<a href="javascript:;">订单列表</a>
+				</li>
+				<li>
+					<a href="javascript:;">用户评论</a>
+				</li>
+				<li>
+					<a href="javascript:;">会员列表</a>
+				</li>
+				<li>
+					<a href="javascript:;">商品设置</a>
+				</li>
+				<li>
+					<a href="javascript:;">移动版</a>
+				</li>
+				<li>
+					<a href="javascript:;">服务市场</a>
+				</li>
+			</ul>
+		</nav>
+		<!---->
+		<div id="list">
+		<div class="top"><a href="#">导航菜单</a></div>
+		<ul class="zong">
+			<!--1-->
+			<li class="click click1">
+				<a href="#" id="click2">商品管理 </a>
+				<ul class="none " >
+					<li><a href="#" class="page" onclick="myajax('list_page1')">商品列表 </a></li>
+					<li><a href="#" class="page" onclick="myajax('list_page2')">添加新商品</a></li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			
+			<!--2-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--3-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--4-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--5-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--6-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--7-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--8-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--9-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--10-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--11-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--12-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--13-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--14-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--15-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			<!--16-->
+			<li class="click">
+				商品管理
+				<ul class="" style="display: none;">
+					<li>商品列表</li>
+					<li>添加新商品</li>
+					<li>商品评价</li>
+					<li>商品评价</li>
+					<li>客户评价</li>
+					<li>商品评价</li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<!---->
+	<div class="list_right">
+		<div class="list_r">
+		
+		</div>
+	</div>
+	</body>
+	
+	<script>
+	/*总计*/
+//console.log($(".shops"))
+				var str = $(".shops").length;
+				$("#totalRecords").html(str);
+				$("#num2").html(str);
+	
+</script>
+</html>

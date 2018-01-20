@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8"/>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+		<META HTTP-EQUIV="expires" CONTENT="0">
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <link rel="stylesheet" href='/stylesheets/reset.css' />
+    <link rel="stylesheet" href="/stylesheets/iconfont.css" />
+     <script src="/javascripts/gVerify.js"></script>
+      <script type="text/javascript" src="/javascripts/jquery-1.11.3.JS"></script>
+			 <script type="text/javascript" src="/javascripts/login.js" ></script>
+  </head>
+  <body>
+    <div class="login-body">
+    <div class="login-hd">
+    <img src="../images/shopex.png" alt="shopex" class="logo">
+  </div>
+  <!-------------------->
+ <div class="center-wrap" id="centerWrap">
+ 	<!---->
+ 	<!--  -->
+    <div class="login-center">
+      <div class="bd-logo">
+        <img src="../images/ecshop-logo.png" alt="ECSHOP" width="373" height="103" border="0">
+      </div>
+    </div>
+    <!---->
+    <div class="z-bd">
+      <div class="login-panel" id="loginPanel">
+        <div class="controls first">
+          <p class="iconfont icon-tubiaozhizuomoban" >           
+          </p>
+          <input  id="username" name="username" placeholder="用户名" type="text">
+        </div>
+        <!---->
+        <div class="controls two active">
+          <p class="iconfont icon-dunpaisuo-tianchong">
+          </p>
+          <input id="psw" name="password" placeholder="密码" type="password">
+        </div>
+        <!---->
+                  <div class="controls third active">
+            <p class="iconfont icon-suozi">
+           
+            </p>
+           
+            <input id="code_input" name="captcha" class="capital" placeholder="请输入验证码" type="text"  autocomplete="off">
+							
+							 <div id="v_container" style="width: 100px;height: 50px;position: absolute;
+top: 0;right: 0;"></div>
+            
+          </div>
+          	
+          <!---->
+        <div class="last">
+          		<button class="btn-a" onclick="login()">登录</button>
+
+        </div>
+        <!---->
+        <div class=" bside" style="border: none">
+         <input value="1" name="remember" id="remember" type="checkbox">
+         
+    </div>
+         
+          <label>保存登录信息</label>
+          <a class="link-forget cl-link-blue" href="#">忘记密码?</a>
+          <a class="link-home cl-link-blue" href="#">去店铺首页&gt;&gt;</a>
+        </div>
+      </div>
+    </div>
+ </div>
+    </form>
+  </body>
+ 
+</html>

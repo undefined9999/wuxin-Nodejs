@@ -1,0 +1,556 @@
+/*       添加 新商品  页                       */
+.sec_rig {
+  width: 1200px;
+ 
+  padding: 10px;
+  background: #0f0;
+  float: left;
+  overflow-y: auto;
+  max-height: 576px;
+  background: url(../images/bg.gif); }
+
+.sec_rig h1 {
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  position: relative; }
+
+.sec_rig h1 span:nth-child(2) {
+  margin-left: 15px; }
+
+.sec_rig h1 span:nth-child(3) {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 100px;
+  height: 28px;
+  background: #ca4d3c;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600; }
+
+.sec_rig h1 span:nth-child(3) a {
+  color: #fff; }
+
+.sec_rig .rig_main {
+  width: 100%;
+  height: auto;
+  background: #efefef;
+  overflow: hidden;
+  border: 1px solid #ccc; }
+
+.sec_rig .rig_main .rig_nav {
+  padding-left: 15px; }
+
+.sec_rig .rig_main .rig_nav li {
+  float: left;
+  padding: 0 20px;
+  height: 39px;
+  margin-top: 5px;
+  line-height: 38px;
+  background: #efefef;
+  color: #787878;
+  cursor: pointer; }
+
+.sec_rig .rig_main .rig_nav li:nth-of-type(1) {
+  background: #fff;
+  color: #000; }
+
+.sec_rig .rig_main .rig_form {
+  width: 100%;
+  height: auto;
+  clear: both;
+  background: #fff;
+  padding-top: 20px; }
+
+.rig_form table {
+  padding: 10px;
+  width: 90%;
+  margin: 0 50px; }
+
+.rig_form tbody {
+  width: 100%; }
+
+.rig_form tbody tr {
+  padding: 10px; }
+
+.rig_form tbody .td_onel {
+  width: 276px;
+  height: 40px;
+  text-align: right;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 14px; }
+
+.rig_form tbody .td_oner {
+  width: 644px;
+  height: 40px;
+  vertical-align: middle; }
+
+.rig_form tbody .td_oner input {
+  height: 20px;
+  margin-left: 15px; }
+
+.rig_form tbody .td_oner span {
+  width: 21px;
+  height: 18px;
+  border: 1px solid #000;
+  display: inline-block; }
+
+.rig_form tbody .td_oner select {
+  width: 82px;
+  height: 20px;
+  margin-right: 20px; }
+
+.rig_form tbody .td_oner i {
+  color: #FF3E39; }
+
+.tr_2 {
+  height: 60px;
+  font-size: 12px; }
+
+.tr_2 .td_oner > input {
+  width: 100px;
+  height: 20px; }
+
+.tr_2 p {
+  color: #ccc;
+  margin-left: 15px; }
+
+.tr_2 img {
+  padding-top: 13px; }
+
+.tr_3 .td_threer select {
+  float: left;
+  margin-left: 15px; }
+
+.tr_3 .td_threer > a {
+  float: left; }
+
+.tr_3 .td_threer div {
+  float: left;
+  visibility: hidden; }
+
+.tr_3 .td_threer a {
+  padding: 1px 5px;
+  margin: 0 5px;
+  border: 1px solid #91C4D0;
+  border-right: 2px solid #278296;
+  border-bottom: 2px solid #278296;
+  background: #DDEEF2; }
+
+.tr_3 .td_threer select {
+  width: 158px;
+  height: 20px; }
+
+.tr_3 .td_threer input {
+  width: 75px;
+  height: 22px; }
+
+.tr_4 .td_fourr input {
+  margin-left: 15px;
+  padding: 5px 15px 5px;
+  border: none;
+  background: #ff3f3f;
+  border-radius: 3px;
+  color: #fff; }
+
+.tr_4 .td_fourr select {
+  width: 158px;
+  height: 20px;
+  margin-top: 3px; }
+
+.tr_5 .td_threer select {
+  float: left;
+  margin-left: 15px; }
+
+.tr_5 .td_threer > a {
+  float: left; }
+
+.tr_5 .td_threer div {
+  float: left;
+  visibility: hidden; }
+
+.tr_5 .td_threer a {
+  padding: 1px 5px;
+  margin: 0 5px;
+  border: 1px solid #91C4D0;
+  border-right: 2px solid #278296;
+  border-bottom: 2px solid #278296;
+  background: #DDEEF2; }
+
+.tr_5 .td_threer select {
+  width: 105px;
+  height: 20px; }
+
+.tr_5 .td_threer input {
+  width: 105px;
+  height: 22px; }
+
+.tr_6 .td_sixr input:nth-child(1) {
+  width: 135px;
+  height: 22px;
+  margin-left: 15px; }
+
+.tr_6 .td_sixr input:nth-child(2) {
+  padding: 1px 6px;
+  margin-top: 1px;
+  margin-right: 15px; }
+
+.tr_7 .td_sevenr {
+  font-size: 12px;
+  padding: 10px 0 5px 15px; }
+
+.tr_7 .td_sevenr input {
+  width: 63px;
+  height: 22px;
+  vertical-align: middle; }
+
+.tr_7 .td_sevenr p {
+  color: #666;
+  padding-top: 4px; }
+
+.tr_7 .td_onel img {
+  padding-top: 13px; }
+
+.tr_8 {
+  height: 100px; }
+
+.tr_8 .td_rightl {
+  vertical-align: top;
+  text-align: right;
+  padding-top: 15px;
+  font-weight: 600; }
+
+.tr_8 .td_rightl img {
+  padding-top: 4px; }
+
+.tr_8 .td_rightr {
+  vertical-align: middle;
+  padding-left: 15px; }
+
+.tr_8 .td_rightr p {
+  font-size: 12px;
+  vertical-align: middle; }
+
+.tr_8 .td_rightr p:nth-child(2) {
+  padding-top: 8px; }
+
+.tr_8 .td_rightr p input {
+  width: 63px;
+  height: 22px; }
+
+.tr_8 .td_rightr p:nth-child(3) {
+  color: #666;
+  padding-top: 4px; }
+
+.tr_11 {
+  height: 60px; }
+
+.tr_11 .td_onel {
+  vertical-align: top; }
+
+.tr_11 .td_onel img {
+  padding-top: 15px; }
+
+.tr_11 p {
+  color: #666;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 5px; }
+
+.tr_13 .td_onel {
+  vertical-align: top; }
+
+.tr_13 .td_onel input {
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.tr_13 .td_telr {
+  padding-left: 15px; }
+
+.tr_13 .td_telr input {
+  width: 135px;
+  height: 22px; }
+
+.tr_14 .td_foter {
+  padding-left: 15px; }
+
+.tr_14 .td_foter input:nth-child(odd) {
+  width: 87px;
+  height: 22px;
+  vertical-align: middle; }
+
+.tr_14 .td_foter input:nth-child(even) {
+  padding: 5px 15px 5px;
+  margin: 2px;
+  border: none;
+  background: #ff3f3f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  vertical-align: middle; }
+
+.tr_15 .td_sixtr {
+  padding-left: 15px; }
+
+.tr_16 {
+  height: 90px; }
+
+.tr_16 .td_onel {
+  vertical-align: top; }
+
+.tr_16 .td_sevtr {
+  padding-left: 15px;
+  vertical-align: middle; }
+
+.tr_16 .td_sevtr p:nth-child(2) input {
+  width: 255px;
+  height: 22px;
+  margin: 5px 0; }
+
+.tr_16 .td_sevtr p:nth-child(3) input {
+  vertical-align: middle; }
+
+.form_bottom {
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.form_bottom input {
+  padding: 5px 15px 5px;
+  margin: 2px;
+  border: none;
+  background: #ff3f3f;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.bot {
+  
+  height: 34px;
+  background: #f3f3f3;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  color: #9CACAF; }
+
+/*       商品列表  页                       */
+.xiang {
+  width: 1078px;
+  height: 388px;
+  background: #fff;
+  display: none; }
+  .xiang textarea {
+    width: 1028px;
+    height: 238px;
+    margin: 20px; }
+  .xiang .form_bottom {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 20px; }
+  .xiang .form_bottom input {
+    padding: 5px 15px 5px;
+    margin: 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer; }
+
+/*       其他信息  页                       */
+.qita {
+  width: 1078px;
+  background: #fff;
+  padding-top: 20px;
+  display: none; }
+  .qita table {
+    padding: 10px;
+    width: 90%;
+    margin: 0 50px;
+    border: none; }
+    .qita table .qi_tr1 {
+      border: none; }
+      .qita table .qi_tr1 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none; }
+      .qita table .qi_tr1 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .qita table .qi_tr1 td:nth-child(2) input {
+          width: 135px; }
+    .qita table .qi_tr2 {
+      border: none; }
+      .qita table .qi_tr2 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none; }
+        .qita table .qi_tr2 td:nth-child(1) img {
+          padding-top: 15px; }
+      .qita table .qi_tr2 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .qita table .qi_tr2 td:nth-child(2) input {
+          width: 135px; }
+        .qita table .qi_tr2 td:nth-child(2) p:nth-child(2) {
+          color: #666; }
+    .qita table .qi_tr4 {
+      border: none; }
+      .qita table .qi_tr4 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none; }
+      .qita table .qi_tr4 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .qita table .qi_tr4 td:nth-child(2) p:nth-child(1) input {
+          vertical-align: middle; }
+    .qita table .qi_tr10 {
+      border: none; }
+      .qita table .qi_tr10 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        vertical-align: top; }
+      .qita table .qi_tr10 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .qita table .qi_tr10 td:nth-child(2) textarea {
+          width: 263px;
+          height: 54px; }
+    .qita table .qi_tr11 {
+      border: none; }
+      .qita table .qi_tr11 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        vertical-align: top; }
+        .qita table .qi_tr11 td:nth-child(1) img {
+          padding-top: 15px; }
+      .qita table .qi_tr11 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .qita table .qi_tr11 td:nth-child(2) textarea {
+          width: 263px;
+          height: 54px; }
+        .qita table .qi_tr11 td:nth-child(2) p {
+          color: #666; }
+  .qita .form_bottom {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 20px; }
+  .qita .form_bottom input {
+    padding: 5px 15px 5px;
+    margin: 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer; }
+
+/*       商品属性  页                       */
+.shuxing {
+  width: 1078px;
+  background: #fff;
+  padding-top: 20px;
+  display: none; }
+  .shuxing table {
+    padding: 10px;
+    width: 90%;
+    margin: 0 50px;
+    border: none; }
+    .shuxing table .shu_tr1 {
+      border: none; }
+      .shuxing table .shu_tr1 td:nth-child(1) {
+        width: 276px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        border: none; }
+        .shuxing table .shu_tr1 td:nth-child(1) img {
+          padding-top: 15px; }
+      .shuxing table .shu_tr1 td:nth-child(2) {
+        border: none;
+        padding-left: 15px; }
+        .shuxing table .shu_tr1 td:nth-child(2) select {
+          width: 108px;
+          height: 20px;
+          font-size: 12px; }
+        .shuxing table .shu_tr1 td:nth-child(2) p:nth-child(2) {
+          color: #666;
+          font-size: 12px; }
+  .shuxing .form_bottom {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 20px; }
+  .shuxing .form_bottom input {
+    padding: 5px 15px 5px;
+    margin: 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer; }
+
+/*       商品相册  页                       */
+.xiangce {
+  width: 1078px;
+  background: #fff;
+  padding-top: 20px;
+  display: none; }
+  .xiangce form p {
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 12px;
+    vertical-align: middle; }
+    .xiangce form p input {
+      vertical-align: middle; }
+    .xiangce form p .http_ {
+      width: 255px;
+      height: 22px; }
+  .xiangce form .form_bottom {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 10px; }
+  .xiangce form .form_bottom input {
+    padding: 5px 15px 5px;
+    margin: 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer; }
